@@ -39,7 +39,7 @@ from django.contrib import admin
 class Order(models.Model):
     OrderID = models.AutoField(primary_key=True)
     UserID = models.IntegerField()
-    OrderDate = models.DateTimeField()
+    OrderDate = models.DateField()
     ItemName = models.CharField(max_length=255)
     OrderQty = models.IntegerField()
     UnitPrice = models.DecimalField(max_digits=10, decimal_places=2)
@@ -53,7 +53,7 @@ class Order(models.Model):
 
 
 ## OUTPUT
-![alt text](<Screenshot 2026-05-03 135622.png>)
+![alt text](<Screenshot 2026-05-07 111925.png>)
 
 
 
